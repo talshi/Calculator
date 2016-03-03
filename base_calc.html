@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+     
+    
+<!-- NAVBAR -->
+    <nav>
+        <span class="logo">
+            <img src="images/calc.ico">
+        </span>
+        <div class="navbar-buttons">
+            <span id="homelink" class="navbar-button"><a href="javascript:void(0)">HOME</a></span>
+            <span id="simplecalclink" class="navbar-button"><a href="javascript:void(0)">SIMPLE CALCULATOR</a></span>
+            <span id="scicalclink" class="navbar-button"><a href="javascript:void(0)">SCIENTIFIC CALCULATOR</a></span>
+            <span id="basecalclink" class="navbar-button"><a href="javascript:void(0)">BASE CALCULATOR</a></span>
+            <span id="contactlink" class="navbar-button"><a href="javascript:void(0)">CONTACT</a></span>
+        </div>
+    </nav>
+
+<!-- MAIN BODY -->
+    <main>
+        <div class="basecalc">
+            <div class="basebox"><label for="basecalcfrom">From:</label>
+            <textarea id="basecalcfrom" class="basecalc-text" placeholder="Insert Here..."></textarea></div>
+            <div class="basebox"><label for="basecalcto">To:</label><textarea id="basecalcto" class="basecalc-text" readonly></textarea></div>
+        </div>
+        <div class="basechoice">
+            <span>
+                <select id="basesfrom">
+                    <option value="Decimal">Decimal</option>
+                    <option value="Hexdecimal">Hexdecimal</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Binary">Binary</option>
+                </select>
+            </span>
+            <span><button type="button" id="convert">Convert</button></span>
+            <span>
+                <select id="basesto">
+                    <option value="Decimal">Decimal</option>
+                    <option value="Hexdecimal">Hexdecimal</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Binary">Binary</option>
+                </select>
+            </span>
+        </div>
+        <div class="base-controller">
+            
+        </div>
+    </main>
+
+</body>
+</html>
