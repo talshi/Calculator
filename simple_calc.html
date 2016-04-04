@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
+</head>
+<body>
+
+     
+    
+<!-- NAVBAR -->
+    <nav>
+        <span class="logo">
+            <img src="images/calc.ico">
+        </span>
+        <div class="navbar-buttons">
+            <span id="homelink" class="navbar-button"><a href="javascript:void(0)">HOME</a></span>
+            <span id="simplecalclink" class="navbar-button"><a href="javascript:void(0)">SIMPLE CALCULATOR</a></span>
+            <span id="scicalclink" class="navbar-button"><a href="javascript:void(0)">SCIENTIFIC CALCULATOR</a></span>
+            <span id="basecalclink" class="navbar-button"><a href="javascript:void(0)">BASE CALCULATOR</a></span>
+            <span id="contactlink" class="navbar-button"><a href="javascript:void(0)">CONTACT</a></span>
+        </div>
+    </nav>
+
+<!-- MAIN BODY -->
+    <main>
+        <div class="textboxs">
+            <textarea id="calc-text" class="calc-text" placeholder="Insert Calculation..." readonly></textarea>
+            <textarea id="history" class="history-text" placeholder="History" readonly></textarea>
+        </div>
+        <div class="memory-block">
+            <span>
+                <label for="memory-text">Memory:</label>
+                <textarea id="memory-text" class="memory-text" row=1 readonly></textarea>
+            </span>
+            <span>
+                <button id="history-clr" class="clear-history-button">Clear History</button>
+            </span>
+        </div>
+        <div class="controller">
+            <div class="controller-block">
+                <span id="clear" class="button">Clear</span>
+                <span id="seven" class="button">7</span>
+                <span id="four" class="button">4</span>
+                <span id="one" class="button">1</span>
+                <span id="percent" class="button">%</span>
+                <span id="power" class="button">^2</span>
+                <span id="eight" class="button">8</span>
+                <span id="five" class="button">5</span>
+                <span id="two" class="button">2</span>
+                <span id="zero" class="button">0</span>
+                <span id="sqrt" class="button">sqrt</span>
+                <span id="nine" class="button">9</span>
+                <span id="six" class="button">6</span>
+                <span id="three" class="button">3</span>
+                <span id="point" class="button">.</span>
+                <span id="divide" class="button">/</span>
+                <span id="multiple" class="button">X</span>
+                <span id="minus" class="button">-</span>
+                <span id="plus" class="button">+</span>
+                <span id="equal" class="button">=</span>
+                <span id="memorysave" class="button">M</span>
+                <span id="memoryclear" class="button">MC</span>
+                <span id="memoryplus" class="button">M+</span>
+                <span id="memoryminus" class="button">M-</span>
+                <span id="memoryreserved" class="button">MR</span>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
